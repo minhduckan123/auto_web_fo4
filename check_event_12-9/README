@@ -3,7 +3,7 @@
 
   + Cài đặt Python
   
-      #Link: https://www.python.org/downloads/
+      Link: https://www.python.org/downloads/
   
   + Cài đặt thư viện selenium(Dành cho window không hướng dẫn Linux(tự túc :)), IOS(có sẵn))
     
@@ -11,6 +11,7 @@
 
       Bước 2: Chạy lệnh
       # $ pip install selenium
+      
       #Xong rồi
 
       #Nếu bạn chưa cài pip thì các bước tiếp theo là dành cho bạn
