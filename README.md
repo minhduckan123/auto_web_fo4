@@ -15,7 +15,9 @@ ________________________________________________________________________________
 Tài khoản ngân hàng:
 
 Số tài khoản: 1300206451923
+
 Ngân hàng: Agribank
+
 Tên TK: Trinh Minh Duc
 
 Tôi cảm kích với sự hỗ trợ của bạn dù là nhỏ nhất!!
