@@ -15,16 +15,40 @@ with open("account.txt", "r") as f:
 for i in read_file:
     username, password = i.split()
     username, password = username.strip(), password.strip()
-        
-    element = WebDriverWait(driver, 1800).until(EC.presence_of_element_located((By.XPATH, "//a[@href = '/user/login']")))
-    element.click()
-    
+
+    driver.find_element_by_xpath("//a[@href = '/user/login']").click()
+
     driver.find_element_by_name("username").send_keys(username)
     driver.find_element_by_name("password").send_keys(password)
-    time.sleep(2)
-    
-    driver.find_element_by_id("confirm-btn").click()
-    print("Logged in successfully")
+    time.sleep(1)
 
+    # Dang nhap
+    driver.find_element_by_id("confirm-btn").click()
+
+    # Chon muc nhiem vu
+    element = WebDriverWait(driver, 1800).until(EC.presence_of_element_located(
+        (By.XPATH, "//a[@class = 'animate__animated animate__tada animate__infinite']")))
+    element.click()
+    time.sleep(2)
+    try:
+        # Cap nhat nhiem vu
+        driver.find_element_by_class_name("mission__action").click()
+        driver.find_element_by_class_name("close").click()
+    except:
+        try:
+            # Da cap nhat nhiem vu
+            driver.find_element_by_class_name("close").click()
+        except:
+            # Nhiem vu chua hoan thanh
+            element_close = WebDriverWait(driver, 30).until(
+                EC.presence_of_element_located((By.XPATH, "//button[@type = 'button']")))
+            element_close.click()
+            driver.find_element_by_class_name("close").click()
+
+    element_close = WebDriverWait(driver, 1800).until(
+        EC.presence_of_element_located((By.XPATH, "//a[@href='/user/logout']")))
+    element_close.click()
+
+    print("Logged in successfully")
 print("Logout successfully")
 print("\n-----Everything donewell!!-----\n")
