@@ -36,4 +36,4 @@
       
       # CẬP NHẬT LẦN CUỐI: 9/12/2021
       # Xem các bản cập nhật mới tại
-      https://github.com/minhduckan123/auto_web_fo4/tree/main/check_event_12-9
+      https://github.com/minhduckan123/auto_web_fo4/tree/main/check_event_9-12
