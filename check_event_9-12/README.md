@@ -35,4 +35,4 @@
       
       #Chọn phiên bản khớp với phiên bản chorme của bạn
       
-# CẬP NHẬT LẦN CUỐI: 9/12/2021
+# CẬP NHẬT LẦN CUỐI: 10/12/2021
