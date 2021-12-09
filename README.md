@@ -31,3 +31,5 @@
   + Cài đặt Chormedriver
 
       #Link: http://chromedriver.chromium.org/downloads
+      
+      #Chọn phiên bản khớp với phiên bản chorme của bạn
