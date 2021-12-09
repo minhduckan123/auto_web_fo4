@@ -44,10 +44,11 @@ for i in read_file:
                 EC.presence_of_element_located((By.XPATH, "//button[@type = 'button']")))
             element_close.click()
             driver.find_element_by_class_name("close").click()
-
-    element_close = WebDriverWait(driver, 1800).until(
+    
+    # Dang xuat
+    element_logout = WebDriverWait(driver, 1800).until(
         EC.presence_of_element_located((By.XPATH, "//a[@href='/user/logout']")))
-    element_close.click()
+    element_logout.click()
 
     print("Logged in successfully")
 print("Logout successfully")
