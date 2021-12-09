@@ -1,7 +1,7 @@
 # auto_web_fo4
 - Yêu cầu:
 
-  + Cài đặt Python
+  + Cài đặt Python\n
   #Link: https://www.python.org/downloads/
   
   + Cài đặt thư viện selenium(Dành cho window không hướng dẫn Linux(tự túc :)), IOS(có sẵn))
