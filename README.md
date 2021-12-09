@@ -1,8 +1,8 @@
 # auto_web_fo4
 - Yêu cầu:
-- 
+
   + Cài đặt Python
-  Link: https://www.python.org/downloads/
+  #Link: https://www.python.org/downloads/
   
   + Cài đặt thư viện selenium(Dành cho window không hướng dẫn Linux(tự túc :)), IOS(có sẵn))
     
@@ -14,7 +14,7 @@
     #Nếu bạn chưa cài pip thì các bước tiếp theo là dành cho bạn
 
     Bước 3: Tải pip
-    Link: https://pypi.org/project/pip/
+    #Link: https://pypi.org/project/pip/
     
     Bước 4: Mở Command Prompt
     
@@ -25,4 +25,4 @@
     #Giờ thì quay lại bước 1
   
   + Cài đặt Chormedriver
-  Link: http://chromedriver.chromium.org/downloads
+  #Link: http://chromedriver.chromium.org/downloads
