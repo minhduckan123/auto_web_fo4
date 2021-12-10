@@ -2,12 +2,19 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chromium.options import ChromiumOptions
+from selenium.webdriver.chrome.options import Options
 import time
 
+
+optios = Options
+chromium_options = ChromiumOptions
+
 url = "https://spin.fo4.garena.vn/"
-driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver")
-driver.maximize_window()
+driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", optinons= chromium_options)
+# driver.maximize_window()
 driver.get(url)
+
 
 with open("hello_text_01.txt", "r") as f:
     read_file = [i.strip() for i in f.readlines()]
@@ -50,6 +57,5 @@ for i in read_file:
         EC.presence_of_element_located((By.XPATH, "//a[@href='/user/logout']")))
     element_logout.click()
 
-    print("Logged in successfully")
-print("Logout successfully")
+    print("{:<15} : {:<12}".format(account,password))
 print("\n-----Everything donewell!!-----\n")
