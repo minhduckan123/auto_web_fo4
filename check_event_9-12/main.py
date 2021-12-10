@@ -10,6 +10,9 @@ import time
 optios = Options
 chromium_options = ChromiumOptions
 
+optios.headless = True
+chromium_options.headless = True
+
 url = "https://spin.fo4.garena.vn/"
 driver = webdriver.Chrome("/usr/lib/chromium-browser/chromedriver", optinons= chromium_options)
 # driver.maximize_window()
